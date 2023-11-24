@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Creative Djinn Studio
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="BubbleSort.css" media="screen" />
+</head>
+
+<body>
+    <h1 class=text style="color: white; border: 5px solid black; background: green;" title="Creative Ryu">Creative Djinn Studio
+    </h1>
+    <h3 class=text style="color: green">Game Developement with Heart from Berlin</h3>
+    <hr>
+    <p id="bubbleId" class="text">BubbleSort</p>
+
+    <script>
+        bubbleId.innerHTML = "Die Ergebnisse von BubbleSort <br>";
+
+        var players = ["Xavier", "Ryu", "Jay", "Pascal", "Maria", "Josi", "Celli", "Andre", "Mailow"];
+        var enemys = ["Günni", "Brian", "Tobi", "Felix", "Basti", "Ben", "Devin", "Nico", "Marcel"];
+
+        bubbleSortSetTimeout(players);
+        // bubbleSortSetTimeout(enemys);
+
+
+        // bubbleSort(enemys);
+
+        //     function bubbleSortDoWhileLoop(list) {
+        //         do {
+        //             var isChanged = false;
+        //             for (var i = 0; i < list.length - 1; i++) {
+
+        //                 if (list[i] > list[i + 1]) {
+        //                     brainValue = list[i];
+        //                     list[i] = list[i + 1];
+        //                     list[i + 1] = brainValue;
+
+        //                     isChanged = true;
+        //                     bubbleId.innerHTML = bubbleId.innerHTML + "<br>" + list;
+        //                 }
+        //             }
+        //         } while (isChanged == true);
+
+        //         return list;
+        //     }
+        //    // alert(bubbleSort(players));
+
+        function bubbleSortSetTimeout(list) {
+
+            for (var i = 0; i < list.length - 1; i++) {
+
+                if (list[i] > list[i + 1]) {
+                    brainValue = list[i];
+                    list[i] = list[i + 1];
+                    list[i + 1] = brainValue;
+
+                    isChanged = true;
+                    // bubbleId.innerHTML = bubbleId.innerHTML + "<br>" + list;
+                    bubbleId.innerHTML = list;
+                    setTimeout(bubbleSortSetTimeout, 100, list);
+
+                    return;
+                }
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

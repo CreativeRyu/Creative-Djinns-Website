@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", Verdana;
+    background-color: #393e46;
+}
+
+@font-face {
+    font-family: "Joystix";
+    font-weight: 200;
+    font-style: normal;
+    src: url(../../Fonts/joystix.ttf) format("woff2");
+    font-display: swap;
+}
+
+.head-container {
+    background-color: #232931;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/* Nav Bar */
+
+.navbar {
+    padding: 1% 5%;
+    margin: 0 auto;
+    text-align: left;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-image: url(../../MetaPictures/navbar.png);
+    background-size: cover;
+}
+
+.nav-container{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    margin-left: 15%;
+}
+
+.navbar-nav {
+    margin: 0 7%;
+}
+
+.nav-item {
+    margin: 0 7%;
+    font-size: 1.1rem;
+    font-family: "Joystix";
+    white-space: nowrap;
+}
+
+/* Anzeige des NavBrands */
+
+/* .navbar-dark .navbar-brand {
+    color: #ff0000;
+} */
+
+/* Anzeige der Navbar Links */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Anzeige der Navbar Links beim drüber hovern */
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(0, 255, 191) !important;
+    text-shadow: 1px 1px 10px rgb(0, 184, 153), 1px 1px 10px rgb(0, 145, 77);
+}
+
+.top-container {
+    background-color: #393e46;
+    padding: 40px;
+}
+
+.middle-container {
+    background-color: #d2e6db;
+    margin-top: 0;
+    padding: 40px;
+}
+
+.bottom-container {
+    background-color: #232931;
+    padding: 40px;
+}
+
+hr {
+    border: dashed 7px;
+    width: 40%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #c4d1cd;
+    margin: 50px auto;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #eeeeee;
+    font-family: "Press Start 2P", monospace;
+    font-size: 150%;
+    /* 16px == 100% == 1rem */
+    margin-bottom: 2px;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #eeeeee;
+    font-family: "Press Start 2P", monospace;
+}
+
+.mid-container-headline {
+    color: #05af76;
+}
+
+h3 {
+    color: #05af76;
+}
+
+.profile-row {
+    width: 50%;
+    margin: auto;
+}
+
+.light-text {
+    color: #eeeeee;
+    margin-bottom: 0;
+    font-family: "Quicksand";
+}
+
+.emblem {
+    margin-top: 100px;
+    height: 180px;
+}
+
+.sprite {
+    margin-top: 20px;
+    height: 150px;
+    border: solid 20px;
+    border-style: solid none;
+    margin-bottom: 10px;
+}
+
+.sprite:hover {
+    border-color: #2b2c2c;
+}
+
+a {
+    color: #05af76;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ffaa;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.img-game-controller {
+    height: 120px;
+    padding: 20px;
+}
+
+.img-tricking {
+    height: 157px;
+    padding: 20px;
+}
+
+.img-tricking:hover {
+    src: 'Pictures/Combo FlickFlack high res.gif';
+}
+
+.skill-row {
+    width: 70%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.copyright {
+    color: #eeeeee;
+}
+
+.footer-link {
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-row {
+    margin-top: 40px;
+    width: 40%;
+    margin: auto;
+}
+
+.btn {
+    background: #00ff7c;
+    background-image: -webkit-linear-gradient(top, #44ff9f, #00a56e);
+    background-image: -moz-linear-gradient(top, #44ff9f, #00a56e);
+    background-image: -ms-linear-gradient(top, #44ff9f, #00a56e);
+    background-image: -o-linear-gradient(top, #44ff9f, #00a56e);
+    background-image: linear-gradient(to bottom, #44ff9f, #00a56e);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #e7e7e7;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 100;
+    padding: 10px;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn:hover {
+    background: #5effbb;
+    background-image: -webkit-linear-gradient(top, #00ff95, #00ce63);
+    background-image: -moz-linear-gradient(top, #00ff95, #00ce63);
+    background-image: -ms-linear-gradient(top, #00ff95, #00ce63);
+    background-image: -o-linear-gradient(top, #00ff95, #00ce63);
+    background-image: linear-gradient(to bottom, #00ff95, #00ce63);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chart</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Libraries/chartist.css">
+    <script src="Libraries/chartist.js"></script>
+    <script src="GraphRandomFunctionsJSON.js"></script>
+    <style>
+        .ct-series-a .ct-point {
+            stroke: red;
+        }
+
+        .ct-series-a .ct-line {
+            stroke: blue;
+        }
+
+        .ct-series-b .ct-line,
+        .ct-series-b .ct-point {
+            stroke: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ct-chart ct-double-octave"></div>
+
+    <script>
+        var randomWithPeak = function () {
+            var random = Math.round(Math.random() * 10 + 0.5);
+            if (random == 10) {
+                random = random + Math.round(Math.random() * 5);
+            }
+            return random;
+        }
+
+        var randomOfTwoNumbers = function () {
+            var random = Math.round(Math.random() * 7 + Math.random() * 8 + 0.5);
+
+            return random;
+        }
+
+        calculateGraph(0, randomWithPeak);
+        calculateGraph(1, randomOfTwoNumbers);
+
+        function calculateGraph(position, randomFunction) {
+            for (var i = 1; i < 10000; i++) {
+
+                value = randomFunction();
+                if (meineDaten.series[position].data[value] == undefined) {
+                    meineDaten.series[position].data[value] = 0;
+                }
+                meineDaten.series[position].data[value] =
+                    meineDaten.series[position].data[value] + 1;
+            }
+
+            for (var i = 0; i < meineDaten.series[position].data.length; i++) {
+                for (var i = 0; i < meineDaten.series[position].data.length; i++) {
+                    meineDaten.labels[i] = i;
+                    if (meineDaten.series[position].data[i] == undefined) {
+                        meineDaten.series[position].data[i] = 0;
+                    }
+                }
+            }
+        }
+
+        new Chartist.Line('.ct-chart', meineDaten, optionen);
+    </script>
+</body>
