@@ -11,7 +11,7 @@ body {
     font-family: "DP Comic";
     font-weight: 200;
     font-style: normal;
-    src: url(../Fonts/dpcomic.ttf) format("woff2");
+    src: url(Fonts/dpcomic.ttf) format("woff2");
     font-display: swap;
 }
 
@@ -19,7 +19,7 @@ body {
     font-family: "Joystix";
     font-weight: 200;
     font-style: normal;
-    src: url(../Fonts/joystix.ttf) format("woff2");
+    src: url(Fonts/joystix.ttf) format("woff2");
     font-display: swap;
 }
 
@@ -35,7 +35,7 @@ h4, h5 {
     margin: 0 auto;
     text-align: left;
     border-bottom: 2px solid rgb(255, 255, 255);
-    background-image: url(../MetaPictures/navbar.png);
+    background-image: url(MetaPictures/navbar.png);
     background-size: cover;
 }
 
@@ -79,7 +79,7 @@ h4, h5 {
 /* ----------------- Title section ----------------- */
 
 #title {
-    background-image: url(../MetaPictures/wallpaper3.JPG);
+    background-image: url(MetaPictures/wallpaper3.JPG);
     background-size: cover;
     padding: 0 15% 5%;
     position: relative;
@@ -303,7 +303,7 @@ h2 {
 /* ----------------- Border Section ----------------- */
 
 #border {
-    background-image: url(../MetaPictures/Szene\ fo\ Page.png);
+    background-image: url(MetaPictures/Szene\ fo\ Page.png);
     background-size: cover;
     height: 200px;
     border-top: 10px solid rgb(255, 255, 255);
@@ -361,7 +361,7 @@ h2 {
 
 #footer {
     padding: 1% 30% 1%;
-    background-image: url(../MetaPictures/navbar.png);
+    background-image: url(MetaPictures/navbar.png);
     background-size: cover;
     text-align: center;
     justify-content: space-around;
